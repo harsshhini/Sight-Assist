@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Object Detection Stream</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('static/bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+        }
+        .title-bar {
+            background: rgba(1, 5, 66, 0.7);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        img {
+            border: 5px solid rgba(255, 255, 255, 0.788);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title-bar">SIGHT ASSIST: REAL-TIME OBJECT IDENTIFICATION AND ASSISTANCE FOR THE BLIND</div>
+    <div class="container">
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html>
